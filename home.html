@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B M W</title>
+    <link rel="icon" href="https://images.icon-icons.com/1834/PNG/512/iconfinderbmwlogo4140436-115966_115915.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+      }
+      body {
+        background-color: black;
+      }
+      .navbar {
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+      .navbar-nav{
+        background: rgba(75, 75, 75, 0.3);
+        backdrop-filter: blur(10px);
+
+      }
+      #logo img {
+        width: 50px;
+      }
+
+      .btn-warning:hover {
+        color:azure;
+        transform: scale(1.05);
+      }
+      .content {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+      video {
+        min-width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+      }
+      .slogan {
+        position: absolute;
+        top: 15%;
+        left: 20px;
+        z-index: 2;
+      }
+
+      .slogan h2 {
+        font-size: clamp(28px, 6vw, 60px);
+        font-weight: bold;
+        opacity: 0.6;
+        line-height: 1.2;
+      }
+
+      .car-name {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 2;
+      }
+
+      .car-name h3 {
+        font-size: clamp(16px, 3vw, 28px);
+        font-weight: bold;
+      }
+
+      .car-name p {
+        font-size: clamp(10px, 2vw, 14px);
+        opacity: 0.7;
+      }
+
+      .stats-bar {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 20px 0;
+        background: rgba(75, 75, 75, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+      }
+
+      /* Each stat */
+      .stat {
+        text-align: center;
+      }
+
+      .stat h4 {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .stat p {
+        font-size: 13px;
+        opacity: 0.8;
+      }
+
+      /* Divider line */
+      .divider {
+        width: 1px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .btn-warning {
+        
+  transform: scale(0.8);
+        }
+        .stats-bar {
+          gap: 20px;
+          padding: 15px 10px;
+        }
+
+        .stat h4 {
+          font-size: 16px;
+        }
+
+        .stat p {
+          font-size: 11px;
+        }
+
+        .divider {
+          height: 30px;
+        }
+      }
+      @media (max-width: 440px) {
+        .slogan {
+          top: 12%;
+          left: 15px;
+        }
+
+        .car-name {
+          bottom: 100px;
+          left: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg px-4" style="z-index: 10">
+      <div class="container-fluid">
+        <!-- LOGO -->
+
+        <a class="navbar-brand fw-bolder fs-1 text-white" href="#" id="logo"
+          ><img
+            src="https://static.vecteezy.com/system/resources/previews/019/764/228/large_2x/bmw-logo-free-download-free-png.png"
+            alt=""
+          />
+          B M W</a
+        >
+
+        <!-- HAMBURGER BUTTON -->
+        <button
+          class="navbar-toggler text-white border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-list" style="font-size: 28px"></i>
+        </button>
+
+        <!-- NAV ITEMS -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul
+            class="navbar-nav px-4 py-2 rounded">
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="#model">Models</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a
+                class="nav-link text-white"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#contactModal"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex ms-lg-3 mt-3 mt-lg-0 " >
+  <button class="btn btn-warning fw-bold px-4" data-bs-toggle="modal"
+        data-bs-target="#enquiryModal">
+    Enquire Now
+  </button>
+</div>
+      </div>
+    </nav>
+    
+    <!-- contact us model -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-0">
+          <!-- HEADER -->
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Contact Us</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- BODY -->
+          <div class="modal-body">
+            <form>
+              <!-- NAME -->
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control bg-transparent text-white border-secondary"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <!-- EMAIL -->
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-white border-secondary"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <!-- MESSAGE -->
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control bg-transparent text-white border-secondary"
+                  rows="4"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+
+              <!-- SUBMIT -->
+              <button type="submit" class="btn btn-outline-light w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EnquiryModal -->
+    <div class="modal fade" id="enquiryModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark text-white border-0">
+
+      <div class="modal-header border-0">
+        <h5 class="modal-title">Car Enquiry</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="row">
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control bg-transparent text-white border-secondary">
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control bg-transparent text-white border-secondary">
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control bg-transparent text-white border-secondary">
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Select Model</label>
+              <select class="form-select bg-dark text-white border-secondary">
+                <option>BMW M4</option>
+                <option>BMW M5</option>
+                <option>BMW X5</option>
+              </select>
+            </div>
+
+            <div class="col-12 mb-3">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control bg-transparent text-white border-secondary">
+            </div>
+
+            <div class="col-12 mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control bg-transparent text-white border-secondary"></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-warning w-100 fw-bold">
+            Submit Enquiry
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+    
+
+    <article>
+      <div class="content ">
+        <!-- VIDEO -->
+        <video
+          src="./4K_Live_Wallpaper_BMW_M4_NEON_CITY_RIDE_Background_1440P.webm"
+          loop
+          muted
+          autoplay
+        ></video>
+
+        <!-- LEFT TEXT -->
+        <div class="slogan">
+          <h2>#The Ultimate <br />Driving Machine</h2>
+        </div>
+
+        <div class="car-name">
+          <h3>BMW M4</h3>
+          <p>Competition Coupe</p>
+        </div>
+        <!-- RIGHT / BOTTOM STATS BAR -->
+        <div class="stats-bar">
+          <div class="stat">
+            <h4>650 Nm</h4>
+            <p>Torque</p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="stat">
+            <h4>3.9s</h4>
+            <p>0–100 km/h</p>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="stat">
+            <h4>290 km/h</h4>
+            <p>Max Speed</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Models -->
+      <section class="container-fluid bg-dark border-top " id="model">
+        <section class="container py-5">
+          <h2 class="text-center mb-4 text-white ">Top Models</h2>
+
+          <div id="carCarousel" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner text-center ">
+              <!-- CARD 1 -->
+              <div class="carousel-item active " data-bs-interval="2000">
+                <div class="d-flex justify-content-center">
+                  <div class="card model-card text-white border w-50">
+                    <img
+                      src="https://cdn.motor1.com/images/mgl/P3JY18/s3/carbahn-bmw-m4-competition-cb3.jpg"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5>BMW M4</h5>
+                      <p>Engine: 3.0L Twin-Turbo Inline-6</p>
+                      <p>Power: ~473-503 hp</p>
+                      <p>0–100 km/h: ~3.5 – 4.1 seconds</p>
+                      <p>Top Speed: ~250 km/h</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="d-flex justify-content-center">
+                  <div class="card model-card text-white border w-50">
+                    <img
+                      src="https://assets.adac.de/image/upload/v1/Autodatenbank/Fahrzeugbilder/im05112-1-bmw-m5.jpg"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5>BMW M5</h5>
+                      <p><p>Engine: 3.0L Twin-Turbo Inline-6</p>
+                      <p>Power: ~600-617 hp</p>
+                      <p>0–100 km/h: ~3.0 – 3.4 seconds</p>
+                      <p>Top Speed: ~250 km/h</p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="d-flex justify-content-center">
+                  <div class="card model-card text-white border w-50">
+                    <img
+                      src="https://www.carscoops.com/wp-content/uploads/2023/09/MD_Prior-Design_BMW_G05_X5-1.jpg"
+                      class="card-img-top"
+                    />
+                    <div class="card-body">
+                      <h5>BMW X5</h5>
+                      <p>Engine: 3.0L Inline-6 (Diesel)</p>
+                      <p>Power: ~286 hp hp</p>
+                      <p>0–100 km/h: ~4.3 – 6.1 sec</p>
+                      <p>Top Speed: ~243–250 km/h</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- OUTSIDE BUTTONS -->
+          <div class="d-flex justify-content-center gap-3 mt-4">
+            <button
+              class="btn btn-outline-light"
+              data-bs-target="#carCarousel"
+              data-bs-slide="prev"
+            >
+              ← Prev
+            </button>
+
+            <button
+              class="btn btn-outline-light"
+              data-bs-target="#carCarousel"
+              data-bs-slide="next"
+            >
+              Next →
+            </button>
+          </div>
+        </section>
+        <!-- BOTTOM LINE -->
+        <hr style="opacity: 0.2" />
+
+        <!-- gallery -->
+        <section class="container py-5" id="gallery">
+          <h2 class="text-center mb-5 text-white">Gallery</h2>
+
+          <div class="row g-3">
+            <!-- IMAGE 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://wallpapers.com/images/file/bmw-pictures-i2431w2299eg9tsw.jpg"
+                class="img-fluid rounded gallery-img"
+              />
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.electronicrepairegypt.com/uploads/3/9/0/1/3901930/mastering-bmw-n55-engine-28a0-fault-repair-a-comprehensive-guide_orig.jpg"
+                class="img-fluid rounded gallery-img"
+              />
+            </div>
+
+            <!-- IMAGE 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.carmatch.vip/wp-content/uploads/2023/05/BMW-X6M-Competition-Interior-Steering-Wheel.jpg"
+                class="img-fluid rounded gallery-img"
+              />
+            </div>
+
+            <!-- IMAGE 4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://wallpapers.com/images/file/bmw-pictures-x1dz6n8kncw74gzq.jpg"
+                class="img-fluid rounded gallery-img"
+              />
+            </div>
+
+            <!-- IMAGE 5 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://wallpapers.com/images/file/bmw-pictures-b9lffx51x4v4jlk1.jpg"
+                class="img-fluid rounded gallery-img"
+              />
+            </div>
+
+            <!-- IMAGE 6 -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <img
+                src="https://www.slashgear.com/img/gallery/2024-bmw-x1-m35i-is-a-compact-suv-that-packs-a-big-punch/l-intro-1687893908.jpg"
+                class="img-fluid rounded gallery-img"
+              />
+            </div>
+          </div>
+          <div class="d-flex justify-content-center gap-3 mt-4">
+            <button class="btn btn-outline-light">View More</button>
+          </div>
+        </section>
+      </section>
+    </article>
+
+    <footer class="container-fluid bg-dark text-white pt-5 pb-3" id="about">
+      <!-- BOTTOM LINE -->
+      <hr style="opacity: 0.2" />
+      <div class="container">
+        <div class="row">
+          <!-- BRAND -->
+          <div class="col-md-4 mb-4">
+            <h3 class="fw-bold">B M W</h3>
+            <p style="opacity: 0.7">
+              Experience luxury, performance, and innovation like never before.
+            </p>
+          </div>
+
+          <!-- LINKS -->
+          <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#model" class="text-white text-decoration-none"
+                  >Models</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Gallery</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SUPPORT -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- SOCIAL -->
+          <div class="col-md-3 mb-4">
+            <h6 class="fw-bold">Follow Us</h6>
+            <div class="d-flex gap-3 fs-4">
+              <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
