@@ -1,0 +1,199 @@
+{
+  "brand": "BMW",
+  "currency": "INR",
+  "models": [
+
+    {
+      "id": "1series",
+      "name": "BMW 1 Series",
+      "series": "1",
+      "category": "Hatchback",
+      "engine": "1.5L / 2.0L Turbo",
+      "power": "109–302 hp",
+      "price": "₹35 - 45 Lakh (Global est.)",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW 1 Series.jpg"
+    },
+
+    {
+      "id": "2gc",
+      "name": "BMW 2 Series Gran Coupe",
+      "series": "2",
+      "category": "Sedan",
+      "engine": "2.0L Turbo",
+      "power": "176 hp",
+      "price": "₹45.8 - 47.7 Lakh",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW 2 Series Gran Coupe.jpg"
+    },
+
+    {
+      "id": "2coupe",
+      "name": "BMW 2 Series Coupe",
+      "series": "2",
+      "category": "Coupe",
+      "engine": "2.0L / 3.0L Turbo",
+      "power": "255–382 hp",
+      "price": "₹60 - 75 Lakh",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW 2 Series Coupe.jpg"
+    },
+
+    {
+      "id": "3series",
+      "name": "BMW 3 Series",
+      "series": "3",
+      "category": "Sedan",
+      "engine": "2.0L Turbo",
+      "power": "255 hp",
+      "price": "₹72.8 - 75.4 Lakh",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW 3 Series.jpg"
+    },
+
+    {
+      "id": "4coupe",
+      "name": "BMW 4 Series Coupe",
+      "series": "4",
+      "category": "Coupe",
+      "engine": "2.0L / 3.0L",
+      "power": "255–382 hp",
+      "price": "₹90 Lakh - 1.1 Cr",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW 4 Series Coupe.jpg"
+    },
+
+    {
+      "id": "4convertible",
+      "name": "BMW 4 Series Convertible",
+      "series": "4",
+      "category": "Convertible",
+      "engine": "3.0L Turbo",
+      "power": "382 hp",
+      "price": "₹1.1 - 1.3 Cr",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW 4 Series Convertible.jpg"
+    },
+
+    {
+      "id": "5series",
+      "name": "BMW 5 Series",
+      "series": "5",
+      "category": "Sedan",
+      "engine": "2.0L / 3.0L",
+      "power": "248–335 hp",
+      "price": "₹74.8 Lakh",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW 5 Series.jpg"
+    },
+
+    {
+      "id": "7series",
+      "name": "BMW 7 Series",
+      "series": "7",
+      "category": "Luxury Sedan",
+      "engine": "3.0L Turbo",
+      "power": "375 hp",
+      "price": "₹1.83 Cr",
+      "fuel_type": "Petrol/Hybrid",
+      "image": "./images/BMW 7 Series.jpg"
+    },
+
+    {
+      "id": "8gc",
+      "name": "BMW 8 Series Gran Coupe",
+      "series": "8",
+      "category": "Luxury Coupe",
+      "engine": "3.0L / V8",
+      "power": "335–523 hp",
+      "price": "₹1.3 - 2.1 Cr",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW 8 Series Gran Coupe.jpg"
+    },
+
+    {
+      "id": "x1",
+      "name": "BMW X1",
+      "series": "X",
+      "category": "SUV",
+      "engine": "2.0L",
+      "power": "241 hp",
+      "price": "₹50.9 - 52.2 Lakh",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW X1.jpg"
+    },
+
+    {
+      "id": "x2",
+      "name": "BMW X2",
+      "series": "X",
+      "category": "SUV Coupe",
+      "engine": "2.0L",
+      "power": "228 hp",
+      "price": "₹45 - 55 Lakh",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW X2.jpg"
+    },
+
+    {
+      "id": "x3",
+      "name": "BMW X3",
+      "series": "X",
+      "category": "SUV",
+      "engine": "2.0L",
+      "power": "258 hp",
+      "price": "₹72.5 - 74.5 Lakh",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW X3.jpg"
+    },
+
+    {
+      "id": "x4",
+      "name": "BMW X4",
+      "series": "X",
+      "category": "SUV Coupe",
+      "engine": "2.0L / 3.0L",
+      "power": "248–382 hp",
+      "price": "₹96 Lakh - 1.1 Cr",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW X4.jpg"
+    },
+
+    {
+      "id": "x5",
+      "name": "BMW X5",
+      "series": "X",
+      "category": "SUV",
+      "engine": "3.0L",
+      "power": "335 hp",
+      "price": "₹93.7 Lakh - 1.05 Cr",
+      "fuel_type": "Petrol/Diesel",
+      "image": "./images/BMW X5.jpg"
+    },
+
+    {
+      "id": "x6",
+      "name": "BMW X6",
+      "series": "X",
+      "category": "SUV Coupe",
+      "engine": "3.0L / V8",
+      "power": "335–523 hp",
+      "price": "₹1.04 - 1.6 Cr",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW X6.jpg"
+    },
+
+    {
+      "id": "x7",
+      "name": "BMW X7",
+      "series": "X",
+      "category": "Luxury SUV",
+      "engine": "3.0L",
+      "power": "375 hp",
+      "price": "₹1.26 - 1.32 Cr",
+      "fuel_type": "Petrol",
+      "image": "./images/BMW X7.jpg"
+    }
+
+  ]
+}

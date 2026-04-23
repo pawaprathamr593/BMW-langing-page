@@ -1,0 +1,388 @@
+      * {
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+      }
+      body {
+        background-color: black;
+      }
+      .navbar {
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+      /* .navbar-nav{
+        background: rgba(75, 75, 75, 0.3);
+        backdrop-filter: blur(10px);
+
+      } */
+      #logo img {
+        width: 50px;
+      }
+
+      .btn-warning:hover {
+        color:azure;
+        transform: scale(1.05);
+      }
+      .content {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+      video {
+        min-width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: -1;
+        object-fit: cover;
+        object-position: center;
+      }
+      .slogan {
+        position: absolute;
+        top: 15%;
+        left: 20px;
+        z-index: 2;
+      }
+
+      .slogan h2 {
+        font-size: clamp(28px, 6vw, 60px);
+        font-weight: bold;
+        opacity: 0.6;
+        line-height: 1.2;
+      }
+
+      .car-name {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        z-index: 2;
+      }
+
+      .car-name h3 {
+        font-size: clamp(16px, 3vw, 28px);
+        font-weight: bold;
+      }
+
+      .car-name p {
+        font-size: clamp(10px, 2vw, 14px);
+        opacity: 0.7;
+      }
+
+      .stats-bar {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 20px 0;
+        background: rgba(75, 75, 75, 0.3);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+      }
+
+      /* Each stat */
+      .stat {
+        text-align: center;
+      }
+
+      .stat h4 {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .stat p {
+        font-size: 13px;
+        opacity: 0.8;
+      }
+
+      /* Divider line */
+      .divider {
+        width: 1px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      /* MOBILE */
+      @media (max-width: 768px) {
+        .btn-warning {
+        
+  transform: scale(0.8);
+        }
+        .stats-bar {
+          gap: 20px;
+          padding: 15px 10px;
+        }
+
+        .stat h4 {
+          font-size: 16px;
+        }
+
+        .stat p {
+          font-size: 11px;
+        }
+
+        .divider {
+          height: 30px;
+        }
+      }
+      @media (max-width: 440px) {
+        
+        .slogan {
+          top: 12%;
+          left: 15px;
+        }
+
+        .car-name {
+          bottom: 100px;
+          left: 15px;
+        }
+      }
+      /* model css */
+      #carName {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#carImage {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #444;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #e6b800;
+}
+.card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+/* gallery */
+.gallery-card {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 250px;        /* 👈 CONTROL HEIGHT HERE */
+  object-fit: cover;    /* 👈 IMPORTANT (no distortion) */
+  transition: 0.3s ease;
+}
+
+.gallery-card img:hover {
+  transform: scale(1.08);
+}
+
+
+
+/* active link */
+.nav-item-link {
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-item-link.active {
+  color: #ffc107 !important;
+  font-weight: bold;
+}
+
+.nav-item-link.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffc107;
+  left: 0;
+  bottom: -5px;
+}
+
+
+.filter-btn.active {
+  background-color: #ffc107;
+  color: black;
+  border-color: #ffc107;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;   /* controls size on large screens */
+  object-fit: cover;   /* no distortion */
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .about-img {
+    max-height: 250px;
+  }
+}
+
+.gallery-img {
+  width: 100%;
+  height: 250px;              /* control size */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.gallery-img:hover {
+  transform: scale(1.08);
+  filter: brightness(70%);
+}
+
+/* Optional overlay effect */
+.gallery-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Text on hover */
+.gallery-img-wrapper::after {
+  content: "View Image";
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.6);
+  padding: 5px 12px;
+  font-size: 12px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.gallery-img-wrapper:hover::after {
+  opacity: 1;
+}
+
+/* gallery */
+/* GLASS CARD */
+.model-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);   /* transparent layer */
+  backdrop-filter: blur(12px);            /* main glass effect */
+  -webkit-backdrop-filter: blur(12px);    /* Safari support */
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* IMAGE INSIDE CARD */
+.model-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* HOVER EFFECT */
+.model-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* OPTIONAL: GLOW BORDER EFFECT */
+.model-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+
+    -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+
+/* GRID FIX (IMPORTANT) */
+#carContainer .col-md-4 {
+  display: flex;
+}
+
+.model-card {
+  width: 100%;
+}
+
+/* Glass effect for modal */
+.glass-modal {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* Optional: make modal background darker */
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Improve text visibility */
+.glass-modal .modal-header,
+.glass-modal .modal-body {
+  background: transparent;
+}
+
+/* Optional smooth animation */
+.modal.fade .modal-dialog {
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+#modalCarImage {
+  width: 100%;      
+  display: block;
+  margin: 0 auto;      
+  
+  max-height: 400px;   
+  object-fit: cover;
+
+  border-radius: 12px;
+}
